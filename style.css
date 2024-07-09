@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+}
+
+#screen2{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#screen1{
+    height: 100vh;
+    width: 100%;
+}
+
+#screen1 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+#screen2 #content{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    /*border: 1px solid red;*/
+    max-width: 1920px;
+    position: relative;
+}
+
+#navone{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 80px;
+}
+
+#navone img{
+    height: 120px;
+}
+
+#leftone, #rightone{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#navone a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#maincontent{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#conleft{
+    min-width: 50%;
+    //*background-color: yellow;*/
+}
+
+#conleft .left-text{
+    position: relative;
+    height: 8vw;
+    /*background-color: red;*/
+    overflow: hidden;
+}
+
+#conleft .left-text h1:nth-child(1){
+   top: 0;
+}
+
+
+#conleft .left-text h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    line-height: .9;
+    color: white;
+    font-weight: 100;
+    font-size: 9vw;
+}
+
+#conleft button{
+    pointer-events: all;
+    padding: .6vw 1.5vw;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    cursor: pointer;
+}
+
+#conright{
+    width: 18%;
+    color: white;
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#conright p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#conright #imagebox{
+    width: 90%;
+    height: 90px;
+    background-image: url("./images/photo-1561365452-adb940139ffa.avif");
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#conright p:nth-child(3){
+    margin-bottom: 40px;
+}
